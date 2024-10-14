@@ -70,7 +70,7 @@ class GameList{
         void ip(){
             cout << "Nhap so luong game: ";
             cin >> n;
-            cout << "Nhap thong tin game (Ten game, ten cong ty, the loai, gia, so gio choi):\n";
+            cout << "Nhap thong tin game:\n";
             for(int i = 0; i < n; ++i){
                 cout << "Game thu " << i + 1 << ":\n";
                 Game x;
