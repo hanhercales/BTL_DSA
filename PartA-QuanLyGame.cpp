@@ -98,7 +98,7 @@ class GameList{
                     max = x.getPrice();
             for(auto x:game)
                 if(max == x.getPrice())
-                    cout << x;
+                    cout << x << endl;
         }
 
         void MinTime(){
@@ -108,7 +108,7 @@ class GameList{
                     min = x.getTimePlayed();
             for(auto x:game)
                 if(min == x.getTimePlayed())
-                    cout << x;
+                    cout << x << endl;
         }
 
         bool GameExist(string s){
@@ -126,7 +126,7 @@ class GameList{
                 cout << "Game can tim: ";
                 for(auto x:game)
                     if(x.getName() == s)
-                        cout << x;
+                        cout << x << endl;
             }
             else cout << "Khong game nao co ten nhu tren!";
         }
@@ -206,6 +206,7 @@ class App{
                         break;
                     case 8:
                         mylist.MinTime();
+                        break;
                     default:
                         cout << "Lua chon khong dung, vui long chon lai!\n";
                         break;
